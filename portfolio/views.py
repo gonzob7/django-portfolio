@@ -10,3 +10,7 @@ def home(request):
 
 def contact(request):
     return HttpResponse("Contact Me")
+
+def greet_by_name(request, name):
+    return HttpResponse(f"Welcome {name}!")
+  # TODO: Return an HttpResponse that contains a string that includes the given name
